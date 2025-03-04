@@ -63,8 +63,9 @@ const VIDEOS = [
 
 const FILE_DOWNLOADS = [
   'media/images/ptok.jpg',
-  'media/images/jaczup.jpg',
-  'media/images/jaczupme.jpg',
+  'media/images/piotr.JPG',
+  'media/images/ptoszek2.jpg',
+  'media/images/ptoszek1.jpg',
   'media/images/ptoszek.jpg',
   'media/images/ptakwspodniach.jpg',
   'media/images/kichajacyptoszek.jpg',
@@ -76,9 +77,9 @@ const FILE_DOWNLOADS = [
 ]
 
 const PHRASES = [
-  'hello my name is ptoszek, lol',
+  'piotrek czepek ci rozpierdalam',
   'birds are funny lalalalalalalallalala',
-  'wgl co u cb bo u mn dbr',
+  'kamil cweeellllllll',
   'knuuurrr eksplozja',
   'hee haw hee haw hee haw hee haw hee haw hee haw hee haw hee haw hee haw hee haw hee haw',
   'abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz',
