@@ -1,26 +1,4 @@
-/*
-  ptoszek.pl
-  Powered by Jaczup
 
-  My version (ptoszek.pl): 
-  - https://github.com/jaczup/ptoszek.pl
-  Original version (theannoyingsite.com): 
-  - https://github.com/feross/TheAnnoyingSite.com/
-
-  Contact with me: https://jaczup.pl
-
-  Contributors:
-    @jaczup - https://github.com/jaczup
-    @intexpression - https://github.com/intexpression
-    @dan64iel - https://github.com/dan64iel
-    @imzeme - https://github.com/imzeme
-    @GameShoot8050 - https://github.com/GameShoot8050
-    @wetraks -  https://github.com/wetraks
-    @cryblanka - https://github.com/cryblanka
-    @9fm - https://github.com/9fm
-    @MARECKIyt - https://github.com/MARECKIyt
-  
-*/
 
 const SCREEN_WIDTH = window.screen.availWidth
 const SCREEN_HEIGHT = window.screen.availHeight
